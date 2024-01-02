@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div id="main">
+        <h1>TIC TAC TOE</h1>
+        <p id="ins">
+            Game starts by just tapping on a box.<br><br>
+            First Player starts as <b>Player X</b> and Second Player as <b>Player 0</b>.
+        </p>
+        <div class="ui">
+            <div class="row">
+                <div class="cell" onclick="handlePlayerTurn(this)"></div>
+                <div class="cell" onclick="handlePlayerTurn(this)"></div>
+                <div class="cell" onclick="handlePlayerTurn(this)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" onclick="handlePlayerTurn(this)"></div>
+                <div class="cell" onclick="handlePlayerTurn(this)"></div>
+                <div class="cell" onclick="handlePlayerTurn(this)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" onclick="handlePlayerTurn(this)"></div>
+                <div class="cell" onclick="handlePlayerTurn(this)"></div>
+                <div class="cell" onclick="handlePlayerTurn(this)"></div>
+            </div>
+        </div>
+        <button id="but" onclick="resetGame()">RESET</button>
+        <p id="print"></p>
+        <p id="winner"></p>
+    </div>
+</body>
+
+</html>
